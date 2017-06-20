@@ -62,6 +62,20 @@ public class TitleActivity extends AppCompatActivity {
         }
     }
 
+    public void startSimultaneousActivity(View view)
+    {
+        Intent intent = new Intent(this,SimultaneousDetectionActivity.class);
+        if (ContextCompat.checkSelfPermission(this,Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED)
+        {
+            permissionsNotSelected();
+            requestPermissions();
+        }
+        else
+        {
+            startActivity(intent);
+        }
+    }
+
     public void requestPermissions()
     {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||

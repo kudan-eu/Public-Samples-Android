@@ -20,22 +20,31 @@
             android:name=".MarkerlessActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="fullSensor">
+
         </activity>
         <activity
             android:name=".Markerless_Wall"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="fullSensor">
+
         </activity>
         <activity
             android:name=".MarkerActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="fullSensor">
+
         </activity>
-        <activity android:name=".TitleActivity">
+        <activity android:name=".TitleActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SimultaneousDetectionActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor">
+        </activity>
     </application>
+
 </manifest>
