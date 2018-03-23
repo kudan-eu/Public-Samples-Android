@@ -39,6 +39,7 @@ public class MarkerActivity extends ARActivity implements ARImageTrackableListen
 
         // Get the trackable Manager singleton
         ARImageTracker trackableManager = ARImageTracker.getInstance();
+        trackableManager.initialise();
 
         //Add image trackable to the image tracker manager
         trackableManager.addTrackable(trackable);

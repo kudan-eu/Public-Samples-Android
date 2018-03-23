@@ -136,6 +136,7 @@ public class SimultaneousDetectionActivity extends ARActivity implements SeekBar
     private void addTrackablesToManager(ArrayList<ARImageTrackable>trackables)
     {
         ARImageTracker tracker = ARImageTracker.getInstance();
+        tracker.initialise();
 
         // Add the trackables in the array to the trackable manager
         for (ARImageTrackable trackable : trackables)
